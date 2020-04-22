@@ -7,9 +7,26 @@
 }
 
 html {
-    font-size: 62.5%; //for 16px standart font
+    font-size: 62.5%; //for 16px standart font (1rem = 10px)
 }
 
 body {
     box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.6rem;
+
+    color: var(--grey-dark-2);
+
+    background-image: linear-gradient(
+        to right bottom,
+        var(--primary-light),
+        var(--primary-dark)
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
 }

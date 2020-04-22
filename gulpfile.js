@@ -37,7 +37,7 @@ let webpackConfig = {
 
 function html() {
     return gulp
-        .src('./src/index.pug')
+        .src('./src/index.html')
         .pipe(gulp.dest('./build'))
         .pipe(browserSync.stream());
 }
