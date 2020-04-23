@@ -54,6 +54,8 @@ body {
 
     background-color: var(--grey-light-1);
     border-bottom: var(--line);
+
+    font-size: 1.4rem;
 }
 
 .description {
@@ -63,10 +65,12 @@ body {
 
     background-color: #fff;
     box-shadow: var(--shadow-light);
-
-    font-size: 1.4rem;
 }
 
 .user-reviews {
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
