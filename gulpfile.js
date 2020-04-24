@@ -8,7 +8,7 @@ const gulpif = require('gulp-if');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 
-let isDev = true;
+let isDev = false;
 let isProd = !isDev;
 
 const conf = {
