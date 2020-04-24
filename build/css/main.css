@@ -633,3 +633,68 @@ body {
     font-family: sans-serif;
     color: var(--grey-light-2);
     line-height: 1; }
+
+/*--------CTA----------*/
+.cta {
+  padding: 3.5rem;
+  text-align: center; }
+  .cta__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem; }
+
+/*---------CTA-button--------*/
+.btn {
+  position: relative;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 100px;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--primary-light)), to(var(--primary-dark)));
+  background-image: -webkit-linear-gradient(left, var(--primary-light), var(--primary-dark));
+  background-image: -moz-linear-gradient(left, var(--primary-light), var(--primary-dark));
+  background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  color: white;
+  cursor: pointer; }
+  .btn__visible {
+    display: inline-block;
+    padding: 2rem 7.5rem;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+  .btn__invisible {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    padding: 2rem 0;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+  .btn:hover {
+    background-image: -webkit-gradient(linear, right top, left top, from(var(--primary-light)), to(var(--primary-dark)));
+    background-image: -webkit-linear-gradient(right, var(--primary-light), var(--primary-dark));
+    background-image: -moz-linear-gradient(right, var(--primary-light), var(--primary-dark));
+    background-image: linear-gradient(to left, var(--primary-light), var(--primary-dark)); }
+  .btn:hover .btn__visible {
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%); }
+  .btn:hover .btn__invisible {
+    top: 0; }
+  .btn:focus {
+    outline: none;
+    -webkit-animation: pulsate 1s infinite;
+    -moz-animation: pulsate 1s infinite;
+    animation: pulsate 1s infinite; }
