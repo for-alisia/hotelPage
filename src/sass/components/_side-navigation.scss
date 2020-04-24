@@ -6,11 +6,23 @@
     list-style: none;
     margin-top: 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        display: flex;
+
+        margin-top: 0;
+    }
+
     &__item {
         position: relative;
+        @media only screen and (max-width: $bp-medium) {
+            flex: 1;
+        }
 
         &:not(:last-child) {
             margin-bottom: 0.5rem;
+            @media only screen and (max-width: $bp-medium) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -51,6 +63,16 @@
 
         z-index: 10;
         position: relative;
+
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 1.5rem 0.5rem;
+        }
     }
 
     &__icon {
@@ -59,6 +81,14 @@
 
         margin-right: 2rem;
         fill: currentColor;
+
+        @media only screen and (max-width: $bp-small) {
+            margin-right: 0;
+            margin-bottom: 7px;
+
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 }
 
@@ -68,4 +98,8 @@
     color: var(--grey-light-4);
 
     padding: 2.5rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: none;
+    }
 }

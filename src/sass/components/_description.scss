@@ -17,6 +17,10 @@
     &__item {
         flex: 0 0 50%;
         margin-bottom: 0.7rem;
+
+        @media only screen and (max-width: $bp-xsmall) {
+            flex: 0 0 100%;
+        }
     }
 
     &__item::before {
@@ -51,6 +55,10 @@
         margin-right: auto;
     }
 
+    &__friends {
+        display: flex;
+    }
+
     &__photo {
         box-sizing: content-box;
 
@@ -61,6 +69,10 @@
 
         &:not(:last-child) {
             margin-right: -1.5rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                margin-right: -2rem;
+            }
         }
     }
 }

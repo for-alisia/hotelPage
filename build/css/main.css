@@ -24,6 +24,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 70.65em) {
+    html {
+      font-size: 55%; } }
 
 body {
   -moz-box-sizing: border-box;
@@ -120,6 +123,9 @@ body {
 
 body {
   padding: 8rem 0; }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 0; } }
 
 .container {
   max-width: 120rem;
@@ -127,6 +133,10 @@ body {
   margin: 0 auto;
   background-color: var(--grey-light-1);
   box-shadow: var(--shadow-dark); }
+  @media only screen and (max-width: 75em) {
+    .container {
+      max-width: 100%;
+      width: 100%; } }
 
 .header {
   height: 7rem;
@@ -147,6 +157,12 @@ body {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      height: 11rem; } }
 
 .logo {
   height: 3.25rem;
@@ -158,6 +174,15 @@ body {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex; }
+  @media only screen and (max-width: 61.125em) {
+    .content {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .sidebar {
   background-color: var(--grey-dark-1);
@@ -202,6 +227,18 @@ body {
   background-color: var(--grey-light-1);
   border-bottom: var(--line);
   font-size: 1.4rem; }
+  @media only screen and (max-width: 61.125em) {
+    .detail {
+      padding: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .detail {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .description {
   -webkit-box-flex: 0;
@@ -213,6 +250,15 @@ body {
   padding: 3rem;
   background-color: #fff;
   box-shadow: var(--shadow-light); }
+  @media only screen and (max-width: 61.125em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 2.5rem;
+      padding: 2.5rem; } }
 
 .user-reviews {
   -webkit-box-flex: 1;
@@ -259,6 +305,19 @@ body {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 100%;
+      -moz-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      background-color: var(--grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -367,10 +426,28 @@ body {
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
+  @media only screen and (max-width: 61.125em) {
+    .side-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 0; } }
   .side-nav__item {
     position: relative; }
+    @media only screen and (max-width: 61.125em) {
+      .side-nav__item {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
     .side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
+      @media only screen and (max-width: 61.125em) {
+        .side-nav__item:not(:last-child) {
+          margin-bottom: 0; } }
   .side-nav__item::before {
     content: '';
     position: absolute;
@@ -417,17 +494,44 @@ body {
     align-items: center;
     z-index: 10;
     position: relative; }
+    @media only screen and (max-width: 61.125em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -moz-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 1.5rem 0.5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 37.5em) {
+      .side-nav__icon {
+        margin-right: 0;
+        margin-bottom: 7px;
+        width: 1.5rem;
+        height: 1.5rem; } }
 
 .legal {
   font-size: 1.2rem;
   text-align: center;
   color: var(--grey-light-4);
   padding: 2.5rem; }
+  @media only screen and (max-width: 61.125em) {
+    .legal {
+      display: none; } }
 
 /*-------Gallery--------*/
 .gallery {
@@ -458,6 +562,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 1.5rem; } }
+    @media only screen and (max-width: 28.45em) {
+      .overview__heading {
+        padding: 1rem 1rem;
+        font-size: 1.5rem; } }
   .overview__stars {
     margin-right: auto;
     display: -webkit-box;
@@ -469,6 +581,10 @@ body {
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--primary); }
+    @media only screen and (max-width: 37.5em) {
+      .overview__icon-star, .overview__icon-location {
+        width: 1.5rem;
+        height: 1.5rem; } }
   .overview__location {
     font-size: 1.2rem;
     display: -webkit-box;
@@ -513,13 +629,22 @@ body {
     -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
     align-self: stretch; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating-average {
+        font-size: 1.8rem; } }
   .overview__rating-count {
     font-size: 0.8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating-count {
+        font-size: 0.5rem; } }
 
 /*-------Description Section-------*/
 .paragraph:not(:last-of-type) {
@@ -546,6 +671,13 @@ body {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     margin-bottom: 0.7rem; }
+    @media only screen and (max-width: 28.45em) {
+      .list__item {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+        -moz-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%; } }
   .list__item::before {
     content: '';
     display: inline-block;
@@ -573,6 +705,12 @@ body {
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
   .recommend__photo {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -582,6 +720,9 @@ body {
     border: 3px solid #fff; }
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
+      @media only screen and (max-width: 75em) {
+        .recommend__photo:not(:last-child) {
+          margin-right: -2rem; } }
 
 /*------Reviews------*/
 .review {
@@ -591,6 +732,10 @@ body {
   margin-bottom: 3.5rem;
   overflow: hidden;
   position: relative; }
+  @media only screen and (max-width: 61.125em) {
+    .review {
+      padding: 2rem;
+      margin-bottom: 3rem; } }
   .review__text {
     margin-bottom: 2rem;
     position: relative;
@@ -643,6 +788,15 @@ body {
     font-weight: 300;
     text-transform: uppercase;
     margin-bottom: 2.5rem; }
+    @media only screen and (max-width: 61.125em) {
+      .cta__book-now {
+        margin-bottom: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .cta__book-now {
+        font-size: 1.5rem; } }
+  @media only screen and (max-width: 61.125em) {
+    .cta {
+      padding: 2rem; } }
 
 /*---------CTA-button--------*/
 .btn {
